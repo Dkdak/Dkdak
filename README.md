@@ -59,7 +59,7 @@ Here are some ideas to get you started:
 
 ### 프로젝트 상세 설정 가이드
 - docker
-  - [Front end](docker%2FReact_Frond.md)
+  - [React+Vite Frontend](docker%2FReact_Frond.md)
     - Vite를 빌드 도구로 사용하는 React 프로젝트를 Docker와 통합합니다.  
   - [Spring Boot Backend ](docker%2FSpringBoot_PG.md)
     - Docker와 Docker Compose를 사용하여 Gradle Spring Boot 프로젝트와 PostgreSQL을 설정합니다. 
