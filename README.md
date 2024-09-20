@@ -64,10 +64,21 @@ Here are some ideas to get you started:
   - [Spring Boot Backend ](docker%2FSpringBoot_PG.md)
     - Docker와 Docker Compose를 사용하여 Gradle Spring Boot 프로젝트와 PostgreSQL을 설정합니다. 
   - [FrondEnd && Backend](https://github.com/Dkdak/docker_project)
-    - Docker와 Docker Compose 설치하고, frond와 backend(postgresql포함)에 대한 전체 설정정보를 제공합니다. 
-- React
+    - Docker와 Docker Compose 설치하고, frond와 backend(postgresql포함)에 대한 전체 설정정보를 제공합니다.
+
+
+- FrondEnd
   - [React 및 Vite 설정](frontend%2FReact_Vite.md)
     - React + Vite 에 대한 설정을 제공합니다. 
+
+
+- Backend
+  - [profiles 환경 설정](docker%2FSpring_profiles_active.md)
+    - 프로젝트에서 환경에 따라 설정을 변경하는 방법으로는 주로 프로파일을 사용하는 것이 좋습니다.
+  - [CORS(Cross-Origin Resource Sharing)](backend%2FCorsFilter.md)
+    - 출처(origin)에서 로드된 웹 페이지가 다른 출처의 리소스에 접근할 수 있는지를 제어합니다. 
+
+
 
 
 ## 학습중인 기술
