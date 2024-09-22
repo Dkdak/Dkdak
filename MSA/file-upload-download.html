@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파일 업로드 및 다운로드</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #uploadedImage {
+            max-width: 300px;
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>파일 업로드 및 다운로드</h1>
+
+<input type="file" id="fileInput">
+<button id="uploadButton">업로드</button>
+
+<h2>다운로드 파일</h2>
+<input type="text" id="fileIdInput" placeholder="파일 ID 입력">
+<button id="downloadButton">다운로드</button>
+
+<img id="uploadedImage" alt="업로드한 이미지">
+
+<script>
+    $(document).ready(function() {
+        // 파일 업로드
+        $('#uploadButton').click(function() {
+            var fileInput = $('#fileInput')[0];
+            var fileId = new Date().getTime(); // 파일 ID로 현재 시간을 사용
+
+            if (fileInput.files.length === 0) {
+                alert("파일을 선택하세요.");
+                return;
+            }
+
+            var formData = new FormData();
+            formData.append('file', fileInput.files[0]);
+
+            $.ajax({
+                url: '/files/upload/' + fileId,
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    alert(response);
+                    $('#uploadedImage').attr('src', URL.createObjectURL(fileInput.files[0])).show();
+                },
+                error: function(xhr) {
+                    alert("업로드 중 오류 발생: " + xhr.responseText);
+                }
+            });
+        });
+
+        // 파일 다운로드
+        $('#downloadButton').click(function() {
+            var fileId = $('#fileIdInput').val();
+
+            if (!fileId) {
+                alert("파일 ID를 입력하세요.");
+                return;
+            }
+
+            $.ajax({
+                url: '/files/download/' + fileId,
+                type: 'GET',
+                xhrFields: {
+                    responseType: 'blob' // 바이너리 데이터를 받을 수 있도록 설정
+                },
+                success: function(data) {
+                    var url = window.URL.createObjectURL(data);
+                    var a = document.createElement('a');
+                    a.href = url;
+                    a.download = fileId; // 파일 ID를 다운로드 이름으로 사용
+                    document.body.appendChild(a);
+                    a.click();
+                    a.remove();
+                },
+                error: function(xhr) {
+                    alert("다운로드 중 오류 발생: " + xhr.responseText);
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

@@ -122,10 +122,11 @@ public class FileService {
         return saveFileToCache(fileId, fileData);
     }
 
-    // Redis에 파일 저장
+    // Redis에 파일 저장 (file_cache:)
     @CachePut(value = "fileCache", key = "#fileId")
     public byte[] saveFileToCache(String fileId, byte[] fileData) {
-        redisTemplate.opsForValue().set("file_cache:" + fileId, fileData);
+        // return을 CachePut함으로 특별한 경우 아니면 필요하지 않다.
+        // redisTemplate.opsForValue().set("file_cache:" + fileId, fileData); 
         return fileData; // 캐시된 파일 데이터를 반환
     }
 
@@ -283,5 +284,21 @@ public class CacheConfig {
     }
 }
 
-
 ```
+
+### 8. Test 
+- [file-upload-download.html](file-upload-download.html)
+  - Ajax를 사용하여 파일을 업로드하고 다운로드하는 간단한 HTML과 JavaScript UI 예제
+
+
+### 9. 문제 및 고찰
+1. @EnableCaching 문제
+   - 애너테이션이 Spring의 캐시 기능을 활성화하는 역할을 합니다.
+   - Spring의 캐시 추상화가 Redis에 자동으로 저장하게 됩니다. 
+   - 즉, Redis와 Spring의 캐시 모두에 저장되므로, 두 시스템이 연동되어 데이터를 효율적으로 관리할 수 있습니다.
+     - 데이터가 매우 큰 경우 Spring 캐시에 저장하는 것은 서버 메모리 문제를 일으킬 수 있습니다.
+
+2. @EnableCaching 에 대한 대안
+   - [스프링 캐시와 Redis 혼용 사용](Redis_SpringCashe.md)
+     - 필요한 경우에만 Spring 캐시를 사용하고, 데이터 크기가 큰 경우 Redis만 사용하는 방법을 있습니다. 
+

@@ -87,7 +87,8 @@ Here are some ideas to get you started:
 
 - MSA
   - 인메모리를 활용한 file 관리 전략 (Redis편)
-    - [Redis_FileCache 전략](MSA%2FRedis_FileCache.md) : Spring Boot와 Redis 캐시, CLOB 타입 DB의 파일 관리
+    - [Redis_Cache 전략](MSA%2FRedis_Cache.md): Spring Boot와 Redis 캐시, CLOB 타입 DB의 파일 관리
+    - [Redis와 SpringCashe의 혼용 사용 전략](MSA%2FRedis_SpringCashe.md) : 데이터가 매우 큰 경우 Spring 캐시에 저장하는 것은 서버 메모리 문제를 일으킬 수 있습니다.
   - [Spring Data JPA에서 제공하는 쿼리 메서드(Query Method)](https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html)
     - 쿼리 메서드의 사용법, 이름 규칙, 다양한 쿼리 생성 방법 등을 자세히 설명하고 있습니다.
   - [Spring Data JPA Projections](https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html#projections)
