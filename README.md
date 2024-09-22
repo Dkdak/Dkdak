@@ -65,6 +65,8 @@ Here are some ideas to get you started:
     - Docker와 Docker Compose를 사용하여 Gradle Spring Boot 프로젝트와 PostgreSQL을 설정합니다. 
   - [FrondEnd && Backend](https://github.com/Dkdak/docker_project)
     - Docker와 Docker Compose 설치하고, frond와 backend(postgresql포함)에 대한 전체 설정정보를 제공합니다.
+  - [Redis Container](docker%2FRedis_Container.md)
+    - Docker로 Redis 서버를 쉽게 실행하고 관리할 수 있습니다.
 
 
 - FrondEnd
