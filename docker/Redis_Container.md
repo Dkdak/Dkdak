@@ -86,3 +86,26 @@ docker exec -it my-redis bash
 # Redis 컨테이너 안의 bash 셸로 접속한 후, Redis CLI로 바로 접속
 docker exec -it my-redis redis-cli
 ````
+
+
+### 5. Redis GUI 클라이언트
+
+1. RedisInsight 
+   - 공식 RedisLabs에서 제공하는 강력한 GUI 도구입니다.
+   - 데이터 탐색, 모니터링, 성능 분석 기능이 있어 매우 유용합니다.
+   - 다양한 플랫폼 지원: Windows, macOS, Linux
+   - https://redis.com/redis-enterprise/redis-insight
+2. Another Redis Desktop Manager (RDM)
+   - 무료이면서도 매우 직관적인 Redis GUI 클라이언트입니다.
+   - Redis의 여러 데이터베이스를 쉽게 관리할 수 있는 기능을 제공합니다.
+   - 다양한 플랫폼 지원: Windows, macOS, Linux
+   - RDM GitHub 페이지 : https://github.com/qishibo/AnotherRedisDesktopManager
+3. Medis
+   - macOS 전용으로 간단하고 사용하기 쉬운 Redis 클라이언트입니다.
+   - 실시간으로 데이터를 보고, 검색할 수 있으며, 간편한 데이터 수정 기능을 제공합니다.
+   - Medis GitHub 페이지 : https://github.com/luin/medis
+4. FastoRedis 
+   - 가벼운 Redis GUI 클라이언트로 사용자가 여러 Redis 인스턴스를 관리할 수 있도록 도와줍니다.
+   - 유료 버전과 무료 버전 모두 제공됩니다.
+   - 다양한 플랫폼 지원: Windows, macOS, Linux
+   - GitHub 페이지 : https://github.com/fastogt/fastoredis
