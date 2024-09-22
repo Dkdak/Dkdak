@@ -283,5 +283,8 @@ public class CacheConfig {
     }
 }
 
-
 ```
+
+### 8. Test 
+- [file-upload-download.html](file-upload-download.html)
+  - Ajax를 사용하여 파일을 업로드하고 다운로드하는 간단한 HTML과 JavaScript UI 예제
