@@ -87,7 +87,11 @@ Here are some ideas to get you started:
 
 - MSA
   - 인메모리를 활용한 file 관리 전략 (Redis편)
-  - 
+    - [Redis_FileCache 전략](MSA%2FRedis_FileCache.md) : Spring Boot와 Redis 캐시, CLOB 타입 DB의 파일 관리
+  - [Spring Data JPA에서 제공하는 쿼리 메서드(Query Method)](https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html)
+    - 쿼리 메서드의 사용법, 이름 규칙, 다양한 쿼리 생성 방법 등을 자세히 설명하고 있습니다.
+  - [Spring Data JPA Projections](https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html#projections)
+    - 인터페이스 기반 프로젝션, DTO(데이터 전송 객체) 프로젝션, 그리고 프로젝션 사용 예시 등을 설명하고 있습니다.
 
 ## 학습중인 기술
 [![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org)
