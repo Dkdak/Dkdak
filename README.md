@@ -94,6 +94,7 @@ Here are some ideas to get you started:
   - [Spring Data JPA Projections](https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html#projections)
     - 인터페이스 기반 프로젝션, DTO(데이터 전송 객체) 프로젝션, 그리고 프로젝션 사용 예시 등을 설명하고 있습니다.
 
+---
 ## 학습중인 기술
 [![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org)
 [![CI/CD](https://img.shields.io/badge/CI%2FCD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/features/actions)
@@ -105,7 +106,7 @@ Here are some ideas to get you started:
 
 # 프로젝트
 
-## 진행중인 프로젝트
+## Project 1
 ![Project Badge](https://img.shields.io/badge/Project%20Name-room--rent-blue?style=for-the-badge)
 <br>설명: 이 프로젝트는 호텔 예약을 위한 react 튜토리얼 버전입니다.
 
@@ -127,13 +128,38 @@ Here are some ideas to get you started:
     - ![JWT](https://img.shields.io/badge/JWT-%E2%9C%94%20v0.11.5-lightgrey)
         - JSON Web Token (JWT)은 인증 및 권한 부여를 위한 compact, URL-safe token을 제공합니다.
 
+---
 
 
 
-  
-### [Project 2](https://github.com/yourusername/project2)
-![Project 2](https://img.shields.io/badge/Project%202-Python%2C%20Django-blue?style=for-the-badge)
-- 설명: 이 프로젝트는...
+## Project 2
+![Project Badge](https://img.shields.io/badge/Project%20Name-REBUILD_AGENT-blue?style=for-the-badge)
+<br>설명: 부동산의 투자 가치를 분석하는 AI 플랫폼입니다. 주소 검색을 통해 건축 정보를 조회하고, 시세를 바탕으로 투자 결과를 산출합니다.
+
+- 프론트엔드: [React 클라이언트](https://github.com/Dkdak/rebuild-frontend)
+    - ![React](https://img.shields.io/badge/React-%E2%9C%94%20v19-blue)
+    - ![TypeScript](https://img.shields.io/badge/TypeScript-%E2%9C%94%20v6-blue)
+    - ![Vite](https://img.shields.io/badge/Vite-%E2%9C%94%20v8-blue)
+      - **Vite**: 최신 웹 개발 도구로, 빠른 개발 서버 시작, 즉각적인 모듈 핫 리로딩, 그리고 최적화된 프로덕션 빌드를 제공합니다. [자세히 알아보기](https://vitejs.dev).
+
+- 백엔드: [Spring Boot 백엔드](https://github.com/Dkdak/rebuild-engine)
+    - ![OpenJDK](https://img.shields.io/badge/OpenJDK-%E2%9C%94%20v21-blue)
+    - ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-%E2%9C%94%20v4.1.0-green)
+    - ![Spring Security](https://img.shields.io/badge/Spring%20Security-%E2%9C%94-orange)
+    - ![JWT](https://img.shields.io/badge/JWT-%E2%9C%94%20v0.11.5-lightgrey)
+      - JSON Web Token (JWT)은 인증 및 권한 부여를 위한 compact, URL-safe token을 제공합니다.
+
+    - ![JPA](https://img.shields.io/badge/JPA-%E2%9C%94-blue) 
+    - ![Hibernate](https://img.shields.io/badge/Hibernate-%E2%9C%94%20v6.0.0-yellowgreen)
+      - Hibernate는 JPA를 구현한 프레임워크로, 캐싱, lazy/eager loading, 복잡한 쿼리, 다중 데이터베이스 지원 등 고급 기능을 제공합니다.
+    - ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%E2%9C%94-blue)
+
+- 인프라: 
+    - ![Docker](https://img.shields.io/badge/Docker-%E2%9C%94-2496ED)
+    - 로컬/운영 배포 가이드와 AI 협업 개발을 위한 규칙 문서를 관리합니다.
+
+
+---
 
 
 ## GitHub 통계
