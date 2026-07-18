@@ -2,10 +2,6 @@
 
 저는 Dkdak 입니다. 주로 **Java**를 기반으로 한 **MSA**을 사용하는 소프트웨어 개발자입니다. 현재는 **클라우드 기반 백엔드 개발**과 **데이터 과학** 분야에 관심을 두고 있습니다.
 
-- 🚀 현재 메인으로 개발 중인 프로젝트는 부동산 투자 분석 플랫폼 **REBUILD_AGENT**입니다. 주소 검색만으로 건축 정보와 시세를 조회해 투자 가치를 분석합니다.
-- 🔭 함께 로컬 AI 기반 자동화 도구 **subtitle-maker**도 개발하고 있습니다.
-- 🌱 클라우드 기반 백엔드 아키텍처와 데이터 과학을 공부하고 있습니다.
-
 ![Profile Views](https://komarev.com/ghpvc/?username=Dkdak&color=blue&style=flat-square)
 
 ## 목차
@@ -127,7 +123,11 @@
 
 - 인프라:
   - ![Docker](https://img.shields.io/badge/Docker-%E2%9C%94-2496ED)
-  - 로컬/운영 배포 가이드와 AI 협업 개발을 위한 규칙 문서를 관리합니다.
+  - 로컬/운영 배포 가이드를 관리합니다.
+
+- AI 협업 개발:
+  - AI 에이전트(Claude Code)와 함께 기획부터 개발까지 협업하여 진행하는 프로젝트입니다.
+  - AI가 제안하는 규칙과 방향을 검토·반영하며 함께 만들어가는 방식으로 개발하고 있습니다.
 
 </details>
 
@@ -182,8 +182,6 @@
 
 
 ## GitHub 통계
-![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=Dkdak&show_icons=true&theme=tokyonight)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Dkdak&layout=compact&theme=tokyonight)
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Dkdak&theme=tokyonight)
 
 ---
