@@ -2,7 +2,8 @@
 
 저는 Dkdak 입니다. 주로 **Java**를 기반으로 한 **MSA**을 사용하는 소프트웨어 개발자입니다. 현재는 **클라우드 기반 백엔드 개발**과 **데이터 과학** 분야에 관심을 두고 있습니다.
 
-- 🔭 최근에는 부동산 투자 분석 플랫폼(REBUILD_AGENT)과 로컬 AI 기반 자동화 도구(subtitle-maker)를 개발하고 있습니다.
+- 🚀 현재 메인으로 개발 중인 프로젝트는 부동산 투자 분석 플랫폼 **REBUILD_AGENT**입니다. 주소 검색만으로 건축 정보와 시세를 조회해 투자 가치를 분석합니다.
+- 🔭 함께 로컬 AI 기반 자동화 도구 **subtitle-maker**도 개발하고 있습니다.
 - 🌱 클라우드 기반 백엔드 아키텍처와 데이터 과학을 공부하고 있습니다.
 
 ![Profile Views](https://komarev.com/ghpvc/?username=Dkdak&color=blue&style=flat-square)
@@ -91,46 +92,48 @@
 
 ---
 ## 학습중인 기술
-[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org)
-[![CI/CD](https://img.shields.io/badge/CI%2FCD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/features/actions)
-[![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)](https://aws.amazon.com)
-[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://docs.docker.com)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 
 ***
 
 # 프로젝트
 
-<details>
-<summary><b>Project 1 — room-rent</b> (클릭하여 펼치기)</summary>
+<details open>
+<summary><b>Project 1 — REBUILD_AGENT</b> · 주소 검색 기반 부동산 투자 가치 분석 AI 플랫폼 (클릭하여 상세보기)</summary>
 
-![Project Badge](https://img.shields.io/badge/Project%20Name-room--rent-blue?style=for-the-badge)
-<br>설명: 이 프로젝트는 호텔 예약을 위한 react 튜토리얼 버전입니다.
+<br>설명: 부동산의 투자 가치를 분석하는 AI 플랫폼입니다. 주소 검색을 통해 건축 정보를 조회하고, 시세를 바탕으로 투자 결과를 산출합니다.
 
-- 프론트엔드: [React 클라이언트](https://github.com/dkdak/rentRoom-client)
-    - ![Node.js](https://img.shields.io/badge/Node.js-%E2%9C%94%20v20.14.0-green)
-    - ![React](https://img.shields.io/badge/React-%E2%9C%94%20v18.2.0-blue)
-    - ![Vite](https://img.shields.io/badge/Vite-%E2%9C%94%20v4.2.0-blue)
-      - **Vite**: 최신 웹 개발 도구로, 빠른 개발 서버 시작, 즉각적인 모듈 핫 리로딩, 그리고 최적화된 프로덕션 빌드를 제공합니다. [자세히 알아보기](https://vitejs.dev).
+- 프론트엔드: [React 클라이언트](https://github.com/Dkdak/rebuild-frontend)
+  - ![React](https://img.shields.io/badge/React-%E2%9C%94%20v19-blue)
+  - ![TypeScript](https://img.shields.io/badge/TypeScript-%E2%9C%94%20v6-blue)
+  - ![Vite](https://img.shields.io/badge/Vite-%E2%9C%94%20v8-blue)
+    - **Vite**: 최신 웹 개발 도구로, 빠른 개발 서버 시작, 즉각적인 모듈 핫 리로딩, 그리고 최적화된 프로덕션 빌드를 제공합니다.
 
-- 백엔드: [Spring Boot 백엔드](https://github.com/dkdak/rentRoom-server)
-    - ![Gradle](https://img.shields.io/badge/Gradle-%E2%9C%94%20v8.2-blue)
-    - ![OpenJDK](https://img.shields.io/badge/OpenJDK-%E2%9C%94%20v17-blue)
-    - ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%E2%9C%94%20v15.0-blue)
-    - ![JPA](https://img.shields.io/badge/JPA-%E2%9C%94-blue)
-    - ![Hibernate](https://img.shields.io/badge/Hibernate-%E2%9C%94%20v6.0.0-yellowgreen)
-        - Hibernate는 JPA를 구현한 프레임워크로, 캐싱, lazy/eager loading, 복잡한 쿼리, 다중 데이터베이스 지원 등 고급 기능을 제공합니다.
-    - ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-%E2%9C%94%20v3.0.0-green)
-    - ![Spring Security](https://img.shields.io/badge/Spring%20Security-%E2%9C%94%20v6.0.0-orange)
-    - ![JWT](https://img.shields.io/badge/JWT-%E2%9C%94%20v0.11.5-lightgrey)
-        - JSON Web Token (JWT)은 인증 및 권한 부여를 위한 compact, URL-safe token을 제공합니다.
+- 백엔드: [Spring Boot 백엔드](https://github.com/Dkdak/rebuild-engine)
+  - ![OpenJDK](https://img.shields.io/badge/OpenJDK-%E2%9C%94%20v21-blue)
+  - ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-%E2%9C%94%20v4.1.0-green)
+  - ![Spring Security](https://img.shields.io/badge/Spring%20Security-%E2%9C%94-orange)
+  - ![JWT](https://img.shields.io/badge/JWT-%E2%9C%94%20v0.11.5-lightgrey)
+    - JSON Web Token (JWT)은 인증 및 권한 부여를 위한 compact, URL-safe token을 제공합니다.
+
+  - ![JPA](https://img.shields.io/badge/JPA-%E2%9C%94-blue)
+  - ![Hibernate](https://img.shields.io/badge/Hibernate-%E2%9C%94%20v6.0.0-yellowgreen)
+    - Hibernate는 JPA를 구현한 프레임워크로, 캐싱, lazy/eager loading, 복잡한 쿼리, 다중 데이터베이스 지원 등 고급 기능을 제공합니다.
+  - ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%E2%9C%94-blue)
+
+- 인프라:
+  - ![Docker](https://img.shields.io/badge/Docker-%E2%9C%94-2496ED)
+  - 로컬/운영 배포 가이드와 AI 협업 개발을 위한 규칙 문서를 관리합니다.
 
 </details>
 
 <details>
-<summary><b>Project 2 — subtitle-maker</b> (클릭하여 펼치기)</summary>
+<summary><b>Project 2 — subtitle-maker</b> · 로컬 GPU 기반 영상 자막 생성·번역 AI 파이프라인 (클릭하여 상세보기)</summary>
 
-![Project Badge](https://img.shields.io/badge/Project%20Name-subtitle--maker-blue?style=for-the-badge)
 <br>설명: 로컬 PC에서 영상의 음성을 분석해 자막을 생성하고, 자연스러운 문장으로 번역하는 AI 파이프라인 도구입니다. 외부 서버 없이 전부 로컬 GPU에서 동작합니다.
 
 - [GitHub 저장소](https://github.com/Dkdak/subtitle-maker)
@@ -151,32 +154,27 @@
 </details>
 
 <details>
-<summary><b>Project 3 — REBUILD_AGENT</b> (클릭하여 펼치기)</summary>
+<summary><b>Project 3 — room-rent</b> · 호텔 예약 React 튜토리얼 프로젝트 (클릭하여 상세보기)</summary>
 
-![Project Badge](https://img.shields.io/badge/Project%20Name-REBUILD_AGENT-blue?style=for-the-badge)
-<br>설명: 부동산의 투자 가치를 분석하는 AI 플랫폼입니다. 주소 검색을 통해 건축 정보를 조회하고, 시세를 바탕으로 투자 결과를 산출합니다.
+<br>설명: 이 프로젝트는 호텔 예약을 위한 react 튜토리얼 버전입니다.
 
-- 프론트엔드: [React 클라이언트](https://github.com/Dkdak/rebuild-frontend)
-  - ![React](https://img.shields.io/badge/React-%E2%9C%94%20v19-blue)
-  - ![TypeScript](https://img.shields.io/badge/TypeScript-%E2%9C%94%20v6-blue)
-  - ![Vite](https://img.shields.io/badge/Vite-%E2%9C%94%20v8-blue)
-    - **Vite**: 최신 웹 개발 도구로, 빠른 개발 서버 시작, 즉각적인 모듈 핫 리로딩, 그리고 최적화된 프로덕션 빌드를 제공합니다. [자세히 알아보기](https://vitejs.dev).
+- 프론트엔드: [React 클라이언트](https://github.com/dkdak/rentRoom-client)
+    - ![Node.js](https://img.shields.io/badge/Node.js-%E2%9C%94%20v20.14.0-green)
+    - ![React](https://img.shields.io/badge/React-%E2%9C%94%20v18.2.0-blue)
+    - ![Vite](https://img.shields.io/badge/Vite-%E2%9C%94%20v4.2.0-blue)
+      - **Vite**: 최신 웹 개발 도구로, 빠른 개발 서버 시작, 즉각적인 모듈 핫 리로딩, 그리고 최적화된 프로덕션 빌드를 제공합니다.
 
-- 백엔드: [Spring Boot 백엔드](https://github.com/Dkdak/rebuild-engine)
-  - ![OpenJDK](https://img.shields.io/badge/OpenJDK-%E2%9C%94%20v21-blue)
-  - ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-%E2%9C%94%20v4.1.0-green)
-  - ![Spring Security](https://img.shields.io/badge/Spring%20Security-%E2%9C%94-orange)
-  - ![JWT](https://img.shields.io/badge/JWT-%E2%9C%94%20v0.11.5-lightgrey)
-    - JSON Web Token (JWT)은 인증 및 권한 부여를 위한 compact, URL-safe token을 제공합니다.
-
-  - ![JPA](https://img.shields.io/badge/JPA-%E2%9C%94-blue)
-  - ![Hibernate](https://img.shields.io/badge/Hibernate-%E2%9C%94%20v6.0.0-yellowgreen)
-    - Hibernate는 JPA를 구현한 프레임워크로, 캐싱, lazy/eager loading, 복잡한 쿼리, 다중 데이터베이스 지원 등 고급 기능을 제공합니다.
-  - ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%E2%9C%94-blue)
-
-- 인프라:
-  - ![Docker](https://img.shields.io/badge/Docker-%E2%9C%94-2496ED)
-  - 로컬/운영 배포 가이드와 AI 협업 개발을 위한 규칙 문서를 관리합니다.
+- 백엔드: [Spring Boot 백엔드](https://github.com/dkdak/rentRoom-server)
+    - ![Gradle](https://img.shields.io/badge/Gradle-%E2%9C%94%20v8.2-blue)
+    - ![OpenJDK](https://img.shields.io/badge/OpenJDK-%E2%9C%94%20v17-blue)
+    - ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%E2%9C%94%20v15.0-blue)
+    - ![JPA](https://img.shields.io/badge/JPA-%E2%9C%94-blue)
+    - ![Hibernate](https://img.shields.io/badge/Hibernate-%E2%9C%94%20v6.0.0-yellowgreen)
+        - Hibernate는 JPA를 구현한 프레임워크로, 캐싱, lazy/eager loading, 복잡한 쿼리, 다중 데이터베이스 지원 등 고급 기능을 제공합니다.
+    - ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-%E2%9C%94%20v3.0.0-green)
+    - ![Spring Security](https://img.shields.io/badge/Spring%20Security-%E2%9C%94%20v6.0.0-orange)
+    - ![JWT](https://img.shields.io/badge/JWT-%E2%9C%94%20v0.11.5-lightgrey)
+        - JSON Web Token (JWT)은 인증 및 권한 부여를 위한 compact, URL-safe token을 제공합니다.
 
 </details>
 
@@ -184,8 +182,9 @@
 
 
 ## GitHub 통계
-![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=Dkdak&show_icons=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Dkdak&layout=compact)
+![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=Dkdak&show_icons=true&theme=tokyonight)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Dkdak&layout=compact&theme=tokyonight)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Dkdak&theme=tokyonight)
 
 ---
 
