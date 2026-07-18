@@ -1,24 +1,19 @@
-
-<!--
-**Dkdak/Dkdak** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
-
 # 안녕하세요! 👋
 
 저는 Dkdak 입니다. 주로 **Java**를 기반으로 한 **MSA**을 사용하는 소프트웨어 개발자입니다. 현재는 **클라우드 기반 백엔드 개발**과 **데이터 과학** 분야에 관심을 두고 있습니다.
 
+- 🔭 최근에는 부동산 투자 분석 플랫폼(REBUILD_AGENT)과 로컬 AI 기반 자동화 도구(subtitle-maker)를 개발하고 있습니다.
+- 🌱 클라우드 기반 백엔드 아키텍처와 데이터 과학을 공부하고 있습니다.
+
+![Profile Views](https://komarev.com/ghpvc/?username=Dkdak&color=blue&style=flat-square)
+
+## 목차
+- [보유중인 기술 스택](#보유중인-기술-스택)
+- [프로젝트 문서](#프로젝트-문서)
+- [학습중인 기술](#학습중인-기술)
+- [프로젝트](#프로젝트)
+- [GitHub 통계](#github-통계)
+- [연락처](#연락처)
 
 ***
 
@@ -106,7 +101,9 @@ Here are some ideas to get you started:
 
 # 프로젝트
 
-## Project 1
+<details>
+<summary><b>Project 1 — room-rent</b> (클릭하여 펼치기)</summary>
+
 ![Project Badge](https://img.shields.io/badge/Project%20Name-room--rent-blue?style=for-the-badge)
 <br>설명: 이 프로젝트는 호텔 예약을 위한 react 튜토리얼 버전입니다.
 
@@ -128,36 +125,60 @@ Here are some ideas to get you started:
     - ![JWT](https://img.shields.io/badge/JWT-%E2%9C%94%20v0.11.5-lightgrey)
         - JSON Web Token (JWT)은 인증 및 권한 부여를 위한 compact, URL-safe token을 제공합니다.
 
----
+</details>
 
+<details>
+<summary><b>Project 2 — subtitle-maker</b> (클릭하여 펼치기)</summary>
 
+![Project Badge](https://img.shields.io/badge/Project%20Name-subtitle--maker-blue?style=for-the-badge)
+<br>설명: 로컬 PC에서 영상의 음성을 분석해 자막을 생성하고, 자연스러운 문장으로 번역하는 AI 파이프라인 도구입니다. 외부 서버 없이 전부 로컬 GPU에서 동작합니다.
 
-## Project 2
+- [GitHub 저장소](https://github.com/Dkdak/subtitle-maker)
+  - ![Java](https://img.shields.io/badge/Java-%E2%9C%94%20v17-blue?logo=openjdk&logoColor=white)
+  - ![Gradle](https://img.shields.io/badge/Gradle-%E2%9C%94-02303A?logo=gradle&logoColor=white)
+  - ![FFmpeg](https://img.shields.io/badge/FFmpeg-%E2%9C%94-007808)
+    - 영상에서 오디오 트랙을 추출합니다.
+  - ![whisper.cpp](https://img.shields.io/badge/whisper.cpp-%E2%9C%94-000000)
+    - GPU(CUDA) 가속 기반 로컬 음성 인식(STT) 엔진입니다.
+  - ![Ollama](https://img.shields.io/badge/Ollama-%E2%9C%94-000000)
+    - 로컬 LLM(gemma2:9b)을 서빙하여 번역을 수행합니다.
+
+- 주요 특징
+  - 설치 스크립트(`setup.ps1`)와 실행 스크립트(`run.bat`)를 분리하여, `git clone` 이후 별도 설정 없이 바로 구동 가능
+  - 배치 처리, 동시 실행 방지(파일 락), 번역 결과 즉시 저장(중단 시에도 데이터 보존) 등 안정성 위주로 설계
+  - CPU/GPU 리소스 사용 비율을 코드 레벨에서 직접 제한하여 시스템 부하를 관리
+
+</details>
+
+<details>
+<summary><b>Project 3 — REBUILD_AGENT</b> (클릭하여 펼치기)</summary>
+
 ![Project Badge](https://img.shields.io/badge/Project%20Name-REBUILD_AGENT-blue?style=for-the-badge)
 <br>설명: 부동산의 투자 가치를 분석하는 AI 플랫폼입니다. 주소 검색을 통해 건축 정보를 조회하고, 시세를 바탕으로 투자 결과를 산출합니다.
 
 - 프론트엔드: [React 클라이언트](https://github.com/Dkdak/rebuild-frontend)
-    - ![React](https://img.shields.io/badge/React-%E2%9C%94%20v19-blue)
-    - ![TypeScript](https://img.shields.io/badge/TypeScript-%E2%9C%94%20v6-blue)
-    - ![Vite](https://img.shields.io/badge/Vite-%E2%9C%94%20v8-blue)
-      - **Vite**: 최신 웹 개발 도구로, 빠른 개발 서버 시작, 즉각적인 모듈 핫 리로딩, 그리고 최적화된 프로덕션 빌드를 제공합니다. [자세히 알아보기](https://vitejs.dev).
+  - ![React](https://img.shields.io/badge/React-%E2%9C%94%20v19-blue)
+  - ![TypeScript](https://img.shields.io/badge/TypeScript-%E2%9C%94%20v6-blue)
+  - ![Vite](https://img.shields.io/badge/Vite-%E2%9C%94%20v8-blue)
+    - **Vite**: 최신 웹 개발 도구로, 빠른 개발 서버 시작, 즉각적인 모듈 핫 리로딩, 그리고 최적화된 프로덕션 빌드를 제공합니다. [자세히 알아보기](https://vitejs.dev).
 
 - 백엔드: [Spring Boot 백엔드](https://github.com/Dkdak/rebuild-engine)
-    - ![OpenJDK](https://img.shields.io/badge/OpenJDK-%E2%9C%94%20v21-blue)
-    - ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-%E2%9C%94%20v4.1.0-green)
-    - ![Spring Security](https://img.shields.io/badge/Spring%20Security-%E2%9C%94-orange)
-    - ![JWT](https://img.shields.io/badge/JWT-%E2%9C%94%20v0.11.5-lightgrey)
-      - JSON Web Token (JWT)은 인증 및 권한 부여를 위한 compact, URL-safe token을 제공합니다.
+  - ![OpenJDK](https://img.shields.io/badge/OpenJDK-%E2%9C%94%20v21-blue)
+  - ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-%E2%9C%94%20v4.1.0-green)
+  - ![Spring Security](https://img.shields.io/badge/Spring%20Security-%E2%9C%94-orange)
+  - ![JWT](https://img.shields.io/badge/JWT-%E2%9C%94%20v0.11.5-lightgrey)
+    - JSON Web Token (JWT)은 인증 및 권한 부여를 위한 compact, URL-safe token을 제공합니다.
 
-    - ![JPA](https://img.shields.io/badge/JPA-%E2%9C%94-blue) 
-    - ![Hibernate](https://img.shields.io/badge/Hibernate-%E2%9C%94%20v6.0.0-yellowgreen)
-      - Hibernate는 JPA를 구현한 프레임워크로, 캐싱, lazy/eager loading, 복잡한 쿼리, 다중 데이터베이스 지원 등 고급 기능을 제공합니다.
-    - ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%E2%9C%94-blue)
+  - ![JPA](https://img.shields.io/badge/JPA-%E2%9C%94-blue)
+  - ![Hibernate](https://img.shields.io/badge/Hibernate-%E2%9C%94%20v6.0.0-yellowgreen)
+    - Hibernate는 JPA를 구현한 프레임워크로, 캐싱, lazy/eager loading, 복잡한 쿼리, 다중 데이터베이스 지원 등 고급 기능을 제공합니다.
+  - ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%E2%9C%94-blue)
 
-- 인프라: 
-    - ![Docker](https://img.shields.io/badge/Docker-%E2%9C%94-2496ED)
-    - 로컬/운영 배포 가이드와 AI 협업 개발을 위한 규칙 문서를 관리합니다.
+- 인프라:
+  - ![Docker](https://img.shields.io/badge/Docker-%E2%9C%94-2496ED)
+  - 로컬/운영 배포 가이드와 AI 협업 개발을 위한 규칙 문서를 관리합니다.
 
+</details>
 
 ---
 
@@ -166,9 +187,7 @@ Here are some ideas to get you started:
 ![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=Dkdak&show_icons=true)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Dkdak&layout=compact)
 
+---
 
-<!--
 ## 연락처
-![Email](https://img.shields.io/badge/your.email@example.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
--->
+[![Email](https://img.shields.io/badge/sleesuengjae79%40gmail.com-0078D4?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sleesuengjae79@gmail.com)
