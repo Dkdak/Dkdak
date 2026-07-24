@@ -1,6 +1,8 @@
 # 안녕하세요! 👋
 
-저는 Dkdak 입니다. 주로 **Java**를 기반으로 한 **MSA**을 사용하는 소프트웨어 개발자입니다. 현재는 **클라우드 기반 백엔드 개발**과 **데이터 과학** 분야에 관심을 두고 있습니다.
+저는 Dkdak입니다.<br>
+**Java**와 **Spring Boot**를 기반으로 **MSA 백엔드 시스템**을 개발하고 있습니다.<br>
+최근에는 **AI를 활용한 서비스 개발**과 개발 생산성을 높이는 **자동화(Automation)** 프로젝트를 진행하고 있습니다.
 
 ![Profile Views](https://komarev.com/ghpvc/?username=Dkdak&color=blue&style=flat-square)
 
@@ -25,6 +27,8 @@
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 ![Spring Framework](https://img.shields.io/badge/Spring%20Framework-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 ![JPA](https://img.shields.io/badge/JPA-59666C?style=for-the-badge&logo=hibernate&logoColor=white)
+![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
 
 ### 데이터베이스
 ![OracleDB](https://img.shields.io/badge/OracleDB-F80000?style=for-the-badge&logo=oracle&logoColor=white)
@@ -35,6 +39,7 @@
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)
 ![Kafka](https://img.shields.io/badge/Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
+![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)
 
 ### 기타
 ![MSA](https://img.shields.io/badge/MSA-008FCC?style=for-the-badge)
@@ -42,6 +47,17 @@
 ![MES](https://img.shields.io/badge/MES-33A7FF?style=for-the-badge)
 ![SCM](https://img.shields.io/badge/SCM-8E44AD?style=for-the-badge)
 
+---
+## 학습중인 기술
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+<br>
+![CI/CD](https://img.shields.io/badge/CI%2FCD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+<br>
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
+![LLM Agent](https://img.shields.io/badge/LLM%20Agent-412991?style=for-the-badge)
 
 ***
 
@@ -67,6 +83,8 @@
   - [빌드 환경별 설정](frontend%2FProcessEnv.md)
     - axios의 baseURL을 로컬 환경과 서버 환경에서 다르게 설정할 수 있습니다.
     - [Vite에서의 빌드 환경별 설정](frontend%2FProcessEnv_Vite.md)은 import.meta.env를 사용해 환경 변수를 사용합니다. 
+  - [카카오맵 API 설정](frontend%2FKakaoMap_Setup.md)
+    - 카카오 디벨로퍼스에서 API 키를 발급받아 React(Vite) 프로젝트에 카카오맵 SDK를 연동하는 방법을 설명합니다.
 
 
 
@@ -86,12 +104,6 @@
   - [Spring Data JPA Projections](https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html#projections)
     - 인터페이스 기반 프로젝션, DTO(데이터 전송 객체) 프로젝션, 그리고 프로젝션 사용 예시 등을 설명하고 있습니다.
 
----
-## 학습중인 기술
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![CI/CD](https://img.shields.io/badge/CI%2FCD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 
 ***
